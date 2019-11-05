@@ -91,13 +91,10 @@
 		430BBA6F23718B07009BA855 /* SampleDeviceAndSensorInfoApp */ = {
 			isa = PBXGroup;
 			children = (
-				430BBA7023718B07009BA855 /* AppDelegate.swift */,
-				430BBA7223718B07009BA855 /* SceneDelegate.swift */,
-				430BBA7423718B07009BA855 /* ViewController.swift */,
-				430BBA7623718B07009BA855 /* Main.storyboard */,
-				430BBA7923718B0C009BA855 /* Assets.xcassets */,
-				430BBA7B23718B0C009BA855 /* LaunchScreen.storyboard */,
-				430BBA7E23718B0C009BA855 /* Info.plist */,
+				430BBA97237190FB009BA855 /* Supporting Files */,
+				430BBA9523719042009BA855 /* Resources */,
+				430BBA9423719033009BA855 /* Storyboards */,
+				430BBA932371902A009BA855 /* Classes */,
 			);
 			path = SampleDeviceAndSensorInfoApp;
 			sourceTree = "<group>";
@@ -109,6 +106,49 @@
 				430BBA8923718B0C009BA855 /* Info.plist */,
 			);
 			path = SampleDeviceAndSensorInfoAppTests;
+			sourceTree = "<group>";
+		};
+		430BBA932371902A009BA855 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				430BBA7023718B07009BA855 /* AppDelegate.swift */,
+				430BBA7223718B07009BA855 /* SceneDelegate.swift */,
+				430BBA962371905B009BA855 /* UI */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		430BBA9423719033009BA855 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				430BBA7623718B07009BA855 /* Main.storyboard */,
+				430BBA7B23718B0C009BA855 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		430BBA9523719042009BA855 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				430BBA7923718B0C009BA855 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		430BBA962371905B009BA855 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				430BBA7423718B07009BA855 /* ViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		430BBA97237190FB009BA855 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				430BBA7E23718B0C009BA855 /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		7A706FBCDBF96E1C0FD8B778 /* Frameworks */ = {
@@ -483,7 +523,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CMSDSEFE7N;
-				INFOPLIST_FILE = SampleDeviceAndSensorInfoApp/Info.plist;
+				INFOPLIST_FILE = "SampleDeviceAndSensorInfoApp/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -502,7 +542,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CMSDSEFE7N;
-				INFOPLIST_FILE = SampleDeviceAndSensorInfoApp/Info.plist;
+				INFOPLIST_FILE = "SampleDeviceAndSensorInfoApp/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

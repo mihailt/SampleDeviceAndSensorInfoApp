@@ -41,19 +41,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Axis X:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qpc-ED-BVl">
-                                <rect key="frame" x="20" y="279" width="52.5" height="21"/>
+                                <rect key="frame" x="20" y="281.5" width="52.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Axis Y:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pft-Qo-3MU">
-                                <rect key="frame" x="20" y="308" width="51" height="21"/>
+                                <rect key="frame" x="20" y="310.5" width="51" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Axis Z:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gg0-As-6nf">
-                                <rect key="frame" x="20" y="337" width="52" height="21"/>
+                                <rect key="frame" x="20" y="339.5" width="52" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -63,7 +63,7 @@
                         <constraints>
                             <constraint firstItem="Pft-Qo-3MU" firstAttribute="top" secondItem="qpc-ED-BVl" secondAttribute="bottom" constant="8" id="4ed-Le-zne"/>
                             <constraint firstItem="Pft-Qo-3MU" firstAttribute="leading" secondItem="qpc-ED-BVl" secondAttribute="leading" id="6FP-Fe-mOG"/>
-                            <constraint firstItem="qpc-ED-BVl" firstAttribute="top" secondItem="L07-IF-dES" secondAttribute="bottom" constant="37.5" id="Oum-iz-3Hc"/>
+                            <constraint firstItem="qpc-ED-BVl" firstAttribute="top" secondItem="L07-IF-dES" secondAttribute="bottom" constant="40" id="Oum-iz-3Hc"/>
                             <constraint firstItem="rI7-Wr-GFL" firstAttribute="trailing" secondItem="L07-IF-dES" secondAttribute="trailing" constant="20" id="QC3-pf-mpO"/>
                             <constraint firstItem="L07-IF-dES" firstAttribute="top" secondItem="rI7-Wr-GFL" secondAttribute="top" constant="20" id="QMU-OL-HnD"/>
                             <constraint firstItem="Gg0-As-6nf" firstAttribute="top" secondItem="Pft-Qo-3MU" secondAttribute="bottom" constant="8" id="SzF-6w-fgi"/>

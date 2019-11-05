@@ -32,10 +32,117 @@
                     <view key="view" contentMode="scaleToFill" id="ogb-dg-SCM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B2Q-11-VEj">
+                                <rect key="frame" x="20" y="160" width="374" height="61"/>
+                                <string key="text">Encapsulated measurements of the attitude, rotation rate, and acceleration of a device.
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attitude Pitch:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLX-ts-2eH">
+                                <rect key="frame" x="20" y="261" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attitude Roll:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nTJ-NP-EB2">
+                                <rect key="frame" x="20" y="290" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attitude Yaw:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pXF-K2-Dbf">
+                                <rect key="frame" x="20" y="319" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rotation Y:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4p3-d1-9EY">
+                                <rect key="frame" x="20" y="377" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rotation X:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y2D-I3-rkw">
+                                <rect key="frame" x="20" y="348" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rotation Z:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mgl-Dy-3Mo">
+                                <rect key="frame" x="20" y="406" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User acceleration Y:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LWD-60-HgW">
+                                <rect key="frame" x="20" y="464" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User acceleration X:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qoc-OW-xNB">
+                                <rect key="frame" x="20" y="435" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User acceleration Z:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nf5-13-VVA">
+                                <rect key="frame" x="20" y="493" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="4Zl-s9-f35" firstAttribute="trailing" secondItem="pXF-K2-Dbf" secondAttribute="trailing" constant="20" id="36T-Wn-rV4"/>
+                            <constraint firstItem="4Zl-s9-f35" firstAttribute="trailing" secondItem="TLX-ts-2eH" secondAttribute="trailing" constant="20" id="3ey-TQ-pvb"/>
+                            <constraint firstItem="y2D-I3-rkw" firstAttribute="top" secondItem="pXF-K2-Dbf" secondAttribute="bottom" constant="8" id="8S4-Cb-1vP"/>
+                            <constraint firstItem="4Zl-s9-f35" firstAttribute="trailing" secondItem="Qoc-OW-xNB" secondAttribute="trailing" constant="20" id="G2R-UQ-YRw"/>
+                            <constraint firstItem="pXF-K2-Dbf" firstAttribute="leading" secondItem="nTJ-NP-EB2" secondAttribute="leading" id="JTF-oW-4R9"/>
+                            <constraint firstItem="LWD-60-HgW" firstAttribute="top" secondItem="Qoc-OW-xNB" secondAttribute="bottom" constant="8" id="O1V-8W-MMk"/>
+                            <constraint firstItem="Nf5-13-VVA" firstAttribute="top" secondItem="LWD-60-HgW" secondAttribute="bottom" constant="8" id="Qmg-Xp-lmg"/>
+                            <constraint firstItem="Nf5-13-VVA" firstAttribute="leading" secondItem="LWD-60-HgW" secondAttribute="leading" id="Qnu-aG-NGR"/>
+                            <constraint firstItem="LWD-60-HgW" firstAttribute="leading" secondItem="Qoc-OW-xNB" secondAttribute="leading" id="Rpc-PH-zaD"/>
+                            <constraint firstItem="Qoc-OW-xNB" firstAttribute="top" secondItem="Mgl-Dy-3Mo" secondAttribute="bottom" constant="8" id="Sy6-nY-sXc"/>
+                            <constraint firstItem="4Zl-s9-f35" firstAttribute="trailing" secondItem="y2D-I3-rkw" secondAttribute="trailing" constant="20" id="VhY-uw-Xsa"/>
+                            <constraint firstItem="Mgl-Dy-3Mo" firstAttribute="leading" secondItem="4p3-d1-9EY" secondAttribute="leading" id="YbO-Y4-N3L"/>
+                            <constraint firstItem="B2Q-11-VEj" firstAttribute="leading" secondItem="4Zl-s9-f35" secondAttribute="leading" constant="20" id="bpR-Fa-w1r"/>
+                            <constraint firstItem="TLX-ts-2eH" firstAttribute="leading" secondItem="B2Q-11-VEj" secondAttribute="leading" id="c64-zA-1kR"/>
+                            <constraint firstItem="y2D-I3-rkw" firstAttribute="leading" secondItem="pXF-K2-Dbf" secondAttribute="leading" id="chD-sM-8B4"/>
+                            <constraint firstItem="TLX-ts-2eH" firstAttribute="top" secondItem="B2Q-11-VEj" secondAttribute="bottom" constant="40" id="fXj-Tg-975"/>
+                            <constraint firstItem="B2Q-11-VEj" firstAttribute="top" secondItem="4Zl-s9-f35" secondAttribute="top" constant="20" id="fdv-Wi-NhY"/>
+                            <constraint firstItem="Mgl-Dy-3Mo" firstAttribute="top" secondItem="4p3-d1-9EY" secondAttribute="bottom" constant="8" id="gQh-tM-Dur"/>
+                            <constraint firstItem="4Zl-s9-f35" firstAttribute="trailing" secondItem="B2Q-11-VEj" secondAttribute="trailing" constant="20" id="gdq-eO-gxB"/>
+                            <constraint firstItem="Qoc-OW-xNB" firstAttribute="leading" secondItem="Mgl-Dy-3Mo" secondAttribute="leading" id="iX5-lx-egh"/>
+                            <constraint firstItem="nTJ-NP-EB2" firstAttribute="top" secondItem="TLX-ts-2eH" secondAttribute="bottom" constant="8" id="ixM-OU-avD"/>
+                            <constraint firstItem="4Zl-s9-f35" firstAttribute="trailing" secondItem="Nf5-13-VVA" secondAttribute="trailing" constant="20" id="iyC-it-b38"/>
+                            <constraint firstItem="4Zl-s9-f35" firstAttribute="trailing" secondItem="Mgl-Dy-3Mo" secondAttribute="trailing" constant="20" id="lh5-Sa-0XC"/>
+                            <constraint firstItem="4p3-d1-9EY" firstAttribute="top" secondItem="y2D-I3-rkw" secondAttribute="bottom" constant="8" id="qQd-fb-F9j"/>
+                            <constraint firstItem="4p3-d1-9EY" firstAttribute="leading" secondItem="y2D-I3-rkw" secondAttribute="leading" id="qb3-Eb-iDh"/>
+                            <constraint firstItem="nTJ-NP-EB2" firstAttribute="leading" secondItem="TLX-ts-2eH" secondAttribute="leading" id="qxJ-6n-J57"/>
+                            <constraint firstItem="4Zl-s9-f35" firstAttribute="trailing" secondItem="LWD-60-HgW" secondAttribute="trailing" constant="20" id="tYA-Bt-S1Y"/>
+                            <constraint firstItem="4Zl-s9-f35" firstAttribute="trailing" secondItem="4p3-d1-9EY" secondAttribute="trailing" constant="20" id="vmB-Wn-o4M"/>
+                            <constraint firstItem="4Zl-s9-f35" firstAttribute="trailing" secondItem="nTJ-NP-EB2" secondAttribute="trailing" constant="20" id="wSK-zw-wZd"/>
+                            <constraint firstItem="pXF-K2-Dbf" firstAttribute="top" secondItem="nTJ-NP-EB2" secondAttribute="bottom" constant="8" id="yAc-o8-Gib"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="4Zl-s9-f35"/>
                     </view>
                     <navigationItem key="navigationItem" title="Device Motion" id="lSb-pM-rZ1"/>
+                    <connections>
+                        <outlet property="pitchLabel" destination="TLX-ts-2eH" id="qSf-Xb-FlJ"/>
+                        <outlet property="rollLabel" destination="nTJ-NP-EB2" id="BAb-Aq-f0A"/>
+                        <outlet property="rotationXLabel" destination="y2D-I3-rkw" id="o4b-yc-QR0"/>
+                        <outlet property="rotationYLabel" destination="4p3-d1-9EY" id="iGv-ak-Jqw"/>
+                        <outlet property="rotationZLabel" destination="Mgl-Dy-3Mo" id="JfH-KT-sn9"/>
+                        <outlet property="userAccelerationXLabel" destination="Qoc-OW-xNB" id="UYo-sN-I2k"/>
+                        <outlet property="userAccelerationYLabel" destination="LWD-60-HgW" id="SVE-QD-rK7"/>
+                        <outlet property="userAccelerationZLabel" destination="Nf5-13-VVA" id="Nfp-19-eNp"/>
+                        <outlet property="yawLabel" destination="pXF-K2-Dbf" id="udF-lW-fQ9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x1G-47-clS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

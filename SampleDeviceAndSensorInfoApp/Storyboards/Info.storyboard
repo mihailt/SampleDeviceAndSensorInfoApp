@@ -32,10 +32,61 @@
                     <view key="view" contentMode="scaleToFill" id="Wb0-C9-Ms3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hardware, software and display of the current iOS device." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Utj-MX-GQa">
+                                <rect key="frame" x="20" y="160" width="374" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Device model:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="veU-Xv-JgA">
+                                <rect key="frame" x="20" y="241" width="109" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Major OS version:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ZS-w1-bYM">
+                                <rect key="frame" x="20" y="270" width="135" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minor OS version:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1O6-qm-Kbz">
+                                <rect key="frame" x="20" y="299" width="135.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Screen Resolution" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g1D-Xp-Dme">
+                                <rect key="frame" x="20" y="328" width="138.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Utj-MX-GQa" firstAttribute="leading" secondItem="qx3-Qo-ddM" secondAttribute="leading" constant="20" id="3x7-xb-tmc"/>
+                            <constraint firstItem="g1D-Xp-Dme" firstAttribute="top" secondItem="1O6-qm-Kbz" secondAttribute="bottom" constant="8" id="4NU-Q1-JDc"/>
+                            <constraint firstItem="g1D-Xp-Dme" firstAttribute="leading" secondItem="1O6-qm-Kbz" secondAttribute="leading" id="6S7-0O-wSz"/>
+                            <constraint firstItem="7ZS-w1-bYM" firstAttribute="top" secondItem="veU-Xv-JgA" secondAttribute="bottom" constant="8" id="OGh-kC-FP6"/>
+                            <constraint firstItem="veU-Xv-JgA" firstAttribute="leading" secondItem="Utj-MX-GQa" secondAttribute="leading" id="OfX-e3-jCd"/>
+                            <constraint firstItem="1O6-qm-Kbz" firstAttribute="top" secondItem="7ZS-w1-bYM" secondAttribute="bottom" constant="8" id="U6b-wA-sB7"/>
+                            <constraint firstItem="1O6-qm-Kbz" firstAttribute="leading" secondItem="7ZS-w1-bYM" secondAttribute="leading" id="VmW-ec-4Us"/>
+                            <constraint firstItem="Utj-MX-GQa" firstAttribute="top" secondItem="qx3-Qo-ddM" secondAttribute="top" constant="20" id="mrj-Oc-wx6"/>
+                            <constraint firstItem="qx3-Qo-ddM" firstAttribute="trailing" secondItem="Utj-MX-GQa" secondAttribute="trailing" constant="20" id="vFT-ly-m5u"/>
+                            <constraint firstItem="veU-Xv-JgA" firstAttribute="top" secondItem="Utj-MX-GQa" secondAttribute="bottom" constant="40" id="vUh-Tz-fQ9"/>
+                            <constraint firstItem="7ZS-w1-bYM" firstAttribute="leading" secondItem="veU-Xv-JgA" secondAttribute="leading" id="yvq-DB-z3u"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="qx3-Qo-ddM"/>
                     </view>
                     <navigationItem key="navigationItem" title="Info" id="6dl-HF-HyY"/>
+                    <connections>
+                        <outlet property="majorOsVersionLabel" destination="7ZS-w1-bYM" id="x3c-yO-fth"/>
+                        <outlet property="minorOsVersionLabel" destination="1O6-qm-Kbz" id="KHy-ZL-YMR"/>
+                        <outlet property="modelLabel" destination="veU-Xv-JgA" id="PRt-8J-soF"/>
+                        <outlet property="screenResolutionLabel" destination="g1D-Xp-Dme" id="kOV-Hm-xbv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zfe-xW-uqI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

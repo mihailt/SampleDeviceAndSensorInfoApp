@@ -25,6 +25,10 @@
 		430BBAB42371A4D4009BA855 /* Accelerometer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 430BBAB32371A4D4009BA855 /* Accelerometer.storyboard */; };
 		430BBAB62371A4E5009BA855 /* Gyroscope.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 430BBAB52371A4E5009BA855 /* Gyroscope.storyboard */; };
 		430BBAB92371B6C8009BA855 /* GyroscopeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430BBAB82371B6C8009BA855 /* GyroscopeViewModel.swift */; };
+		430BBABC2371BA09009BA855 /* MagnetometerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430BBABB2371BA09009BA855 /* MagnetometerViewModel.swift */; };
+		430BBABF2371BC94009BA855 /* DeviceMotionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430BBABE2371BC94009BA855 /* DeviceMotionViewModel.swift */; };
+		430BBAC22371C6D0009BA855 /* AccelerometerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430BBAC12371C6D0009BA855 /* AccelerometerViewModel.swift */; };
+		430BBAC72371CC7E009BA855 /* InfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430BBAC62371CC7E009BA855 /* InfoViewModel.swift */; };
 		BCE87F79AEC599541A12D6CB /* Pods_SampleDeviceAndSensorInfoAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0BD2BF03294CD01271F28F /* Pods_SampleDeviceAndSensorInfoAppTests.framework */; };
 		D68EE160338C958736D4BA22 /* Pods_SampleDeviceAndSensorInfoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2B29948590ECFA10AF123F /* Pods_SampleDeviceAndSensorInfoApp.framework */; };
 /* End PBXBuildFile section */
@@ -65,6 +69,10 @@
 		430BBAB32371A4D4009BA855 /* Accelerometer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Accelerometer.storyboard; sourceTree = "<group>"; };
 		430BBAB52371A4E5009BA855 /* Gyroscope.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Gyroscope.storyboard; sourceTree = "<group>"; };
 		430BBAB82371B6C8009BA855 /* GyroscopeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GyroscopeViewModel.swift; sourceTree = "<group>"; };
+		430BBABB2371BA09009BA855 /* MagnetometerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnetometerViewModel.swift; sourceTree = "<group>"; };
+		430BBABE2371BC94009BA855 /* DeviceMotionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceMotionViewModel.swift; sourceTree = "<group>"; };
+		430BBAC12371C6D0009BA855 /* AccelerometerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerometerViewModel.swift; sourceTree = "<group>"; };
+		430BBAC62371CC7E009BA855 /* InfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewModel.swift; sourceTree = "<group>"; };
 		7B2B29948590ECFA10AF123F /* Pods_SampleDeviceAndSensorInfoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleDeviceAndSensorInfoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D8F087D0983FAF7F90A0434 /* Pods-SampleDeviceAndSensorInfoAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleDeviceAndSensorInfoAppTests.release.xcconfig"; path = "Target Support Files/Pods-SampleDeviceAndSensorInfoAppTests/Pods-SampleDeviceAndSensorInfoAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		CCDEA0C98D664A248456EA69 /* Pods-SampleDeviceAndSensorInfoAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleDeviceAndSensorInfoAppTests.debug.xcconfig"; path = "Target Support Files/Pods-SampleDeviceAndSensorInfoAppTests/Pods-SampleDeviceAndSensorInfoAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -195,6 +203,7 @@
 		430BBA992371A103009BA855 /* AccelerometerViewController */ = {
 			isa = PBXGroup;
 			children = (
+				430BBAC02371C6A4009BA855 /* ViewModel */,
 				430BBAA02371A14A009BA855 /* AccelerometerViewController.swift */,
 			);
 			path = AccelerometerViewController;
@@ -203,6 +212,7 @@
 		430BBA9A2371A10C009BA855 /* DeviceMotionViewController */ = {
 			isa = PBXGroup;
 			children = (
+				430BBABD2371BC7C009BA855 /* ViewModel */,
 				430BBA9E2371A13F009BA855 /* DeviceMotionViewController.swift */,
 			);
 			path = DeviceMotionViewController;
@@ -211,6 +221,7 @@
 		430BBA9B2371A118009BA855 /* MagnetometerViewController */ = {
 			isa = PBXGroup;
 			children = (
+				430BBABA2371B9F4009BA855 /* ViewModel */,
 				430BBA9C2371A130009BA855 /* MagnetometerViewController.swift */,
 			);
 			path = MagnetometerViewController;
@@ -219,6 +230,7 @@
 		430BBAA42371A24F009BA855 /* InfoViewController */ = {
 			isa = PBXGroup;
 			children = (
+				430BBAC52371CC71009BA855 /* ViewModel */,
 				430BBAAB2371A41E009BA855 /* InfoViewController.swift */,
 			);
 			path = InfoViewController;
@@ -236,6 +248,38 @@
 			isa = PBXGroup;
 			children = (
 				430BBAB82371B6C8009BA855 /* GyroscopeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		430BBABA2371B9F4009BA855 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				430BBABB2371BA09009BA855 /* MagnetometerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		430BBABD2371BC7C009BA855 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				430BBABE2371BC94009BA855 /* DeviceMotionViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		430BBAC02371C6A4009BA855 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				430BBAC12371C6D0009BA855 /* AccelerometerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		430BBAC52371CC71009BA855 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				430BBAC62371CC7E009BA855 /* InfoViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -452,7 +496,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				430BBAC72371CC7E009BA855 /* InfoViewModel.swift in Sources */,
+				430BBABC2371BA09009BA855 /* MagnetometerViewModel.swift in Sources */,
 				430BBA9D2371A130009BA855 /* MagnetometerViewController.swift in Sources */,
+				430BBAC22371C6D0009BA855 /* AccelerometerViewModel.swift in Sources */,
+				430BBABF2371BC94009BA855 /* DeviceMotionViewModel.swift in Sources */,
 				430BBAA32371A15A009BA855 /* GyroscopeViewController.swift in Sources */,
 				430BBAA12371A14A009BA855 /* AccelerometerViewController.swift in Sources */,
 				430BBA7123718B07009BA855 /* AppDelegate.swift in Sources */,

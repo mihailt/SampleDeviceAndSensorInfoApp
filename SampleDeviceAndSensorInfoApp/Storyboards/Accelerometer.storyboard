@@ -32,10 +32,53 @@
                     <view key="view" contentMode="scaleToFill" id="XKK-yJ-HOx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KIy-X3-7ZC">
+                                <rect key="frame" x="20" y="160" width="374" height="81.5"/>
+                                <string key="text">An accelerometer measures changes in velocity along one axis. All iOS devices have a three-axis accelerometer, which delivers acceleration values in each of the three axes </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Axis X:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xf9-jb-5Pp">
+                                <rect key="frame" x="20" y="281.5" width="52.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Axis Z:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WBx-0K-YDn">
+                                <rect key="frame" x="20" y="339.5" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Axis Y:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N3F-rJ-weD">
+                                <rect key="frame" x="20" y="310.5" width="51" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="WBx-0K-YDn" firstAttribute="leading" secondItem="N3F-rJ-weD" secondAttribute="leading" id="6lY-yo-CH1"/>
+                            <constraint firstItem="N3F-rJ-weD" firstAttribute="top" secondItem="xf9-jb-5Pp" secondAttribute="bottom" constant="8" id="EWD-Is-xRU"/>
+                            <constraint firstItem="xf9-jb-5Pp" firstAttribute="top" secondItem="KIy-X3-7ZC" secondAttribute="bottom" constant="40" id="K7W-iT-foQ"/>
+                            <constraint firstItem="N3F-rJ-weD" firstAttribute="leading" secondItem="xf9-jb-5Pp" secondAttribute="leading" id="RGV-7a-sVb"/>
+                            <constraint firstItem="Ml9-67-eIS" firstAttribute="trailing" secondItem="KIy-X3-7ZC" secondAttribute="trailing" constant="20" id="bj0-Ec-GhX"/>
+                            <constraint firstItem="xf9-jb-5Pp" firstAttribute="leading" secondItem="KIy-X3-7ZC" secondAttribute="leading" id="e6j-Ae-RcP"/>
+                            <constraint firstItem="WBx-0K-YDn" firstAttribute="top" secondItem="N3F-rJ-weD" secondAttribute="bottom" constant="8" id="fSN-PG-vqp"/>
+                            <constraint firstItem="KIy-X3-7ZC" firstAttribute="leading" secondItem="Ml9-67-eIS" secondAttribute="leading" constant="20" id="fVu-lc-Vzt"/>
+                            <constraint firstItem="KIy-X3-7ZC" firstAttribute="top" secondItem="Ml9-67-eIS" secondAttribute="top" constant="20" id="qUg-Ov-s4b"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Ml9-67-eIS"/>
                     </view>
                     <navigationItem key="navigationItem" title="Accelerometer" id="5AP-Gf-sBl"/>
+                    <connections>
+                        <outlet property="axisXLabel" destination="xf9-jb-5Pp" id="Fez-I8-cvf"/>
+                        <outlet property="axisYLabel" destination="N3F-rJ-weD" id="zcG-3W-1ax"/>
+                        <outlet property="axisZLabel" destination="WBx-0K-YDn" id="Jzk-7B-JXA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9PB-V8-Zqt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

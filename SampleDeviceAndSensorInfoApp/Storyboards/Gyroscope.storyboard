@@ -32,14 +32,57 @@
                     <view key="view" contentMode="scaleToFill" id="Tv7-BP-f5f">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L07-IF-dES">
+                                <rect key="frame" x="20" y="160" width="374" height="81.5"/>
+                                <string key="text">A gyroscope measures the rate at which a device rotates around a spatial axis. Many iOS devices have a three-axis gyroscope, which delivers rotation values in each of the three axes</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Axis X:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qpc-ED-BVl">
+                                <rect key="frame" x="20" y="279" width="52.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Axis Y:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pft-Qo-3MU">
+                                <rect key="frame" x="20" y="308" width="51" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Axis Z:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gg0-As-6nf">
+                                <rect key="frame" x="20" y="337" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Pft-Qo-3MU" firstAttribute="top" secondItem="qpc-ED-BVl" secondAttribute="bottom" constant="8" id="4ed-Le-zne"/>
+                            <constraint firstItem="Pft-Qo-3MU" firstAttribute="leading" secondItem="qpc-ED-BVl" secondAttribute="leading" id="6FP-Fe-mOG"/>
+                            <constraint firstItem="qpc-ED-BVl" firstAttribute="top" secondItem="L07-IF-dES" secondAttribute="bottom" constant="37.5" id="Oum-iz-3Hc"/>
+                            <constraint firstItem="rI7-Wr-GFL" firstAttribute="trailing" secondItem="L07-IF-dES" secondAttribute="trailing" constant="20" id="QC3-pf-mpO"/>
+                            <constraint firstItem="L07-IF-dES" firstAttribute="top" secondItem="rI7-Wr-GFL" secondAttribute="top" constant="20" id="QMU-OL-HnD"/>
+                            <constraint firstItem="Gg0-As-6nf" firstAttribute="top" secondItem="Pft-Qo-3MU" secondAttribute="bottom" constant="8" id="SzF-6w-fgi"/>
+                            <constraint firstItem="L07-IF-dES" firstAttribute="leading" secondItem="rI7-Wr-GFL" secondAttribute="leading" constant="20" id="ZoQ-8z-SWs"/>
+                            <constraint firstItem="Gg0-As-6nf" firstAttribute="leading" secondItem="Pft-Qo-3MU" secondAttribute="leading" id="hDQ-Ia-Px0"/>
+                            <constraint firstItem="qpc-ED-BVl" firstAttribute="leading" secondItem="L07-IF-dES" secondAttribute="leading" id="laz-ci-nUG"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="rI7-Wr-GFL"/>
                     </view>
                     <navigationItem key="navigationItem" title="Gyroscope" id="HQ4-dE-ISJ"/>
+                    <connections>
+                        <outlet property="axisXLabel" destination="qpc-ED-BVl" id="1K6-Ar-JbC"/>
+                        <outlet property="axisYLabel" destination="Pft-Qo-3MU" id="dKx-qu-hec"/>
+                        <outlet property="axisZLabel" destination="Gg0-As-6nf" id="hBS-5N-sZg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r1v-fm-BJA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="158" y="161"/>
+            <point key="canvasLocation" x="156.52173913043478" y="160.71428571428569"/>
         </scene>
     </scenes>
     <resources>

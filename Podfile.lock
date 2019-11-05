@@ -1,4 +1,7 @@
 PODS:
+  - GBDeviceInfo (6.3.0):
+    - GBDeviceInfo/Core (= 6.3.0)
+  - GBDeviceInfo/Core (6.3.0)
   - RxCocoa (5.0.0):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
@@ -9,23 +12,26 @@ PODS:
   - RxSwift (5.0.0)
 
 DEPENDENCIES:
+  - GBDeviceInfo (~> 6.0)
   - RxCocoa (~> 5)
-  - RxCoreMotion
+  - RxCoreMotion (~> 1.2)
   - RxSwift (~> 5)
 
 SPEC REPOS:
   trunk:
+    - GBDeviceInfo
     - RxCocoa
     - RxCoreMotion
     - RxRelay
     - RxSwift
 
 SPEC CHECKSUMS:
+  GBDeviceInfo: a3f39dba1a04dcb630abff65d6f7e8fbf319eadd
   RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
   RxCoreMotion: d4edac149ab1e9c4d5bf0e22d786e8169e22a274
   RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
   RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
 
-PODFILE CHECKSUM: 1b47621ad165db97def5a8fa33e3088f1ca04648
+PODFILE CHECKSUM: 596011ebf938157fb40f11b5c1952816e778db2b
 
 COCOAPODS: 1.8.3

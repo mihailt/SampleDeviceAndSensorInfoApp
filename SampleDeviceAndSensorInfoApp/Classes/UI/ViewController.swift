@@ -7,11 +7,17 @@
 //
 
 import UIKit
+import GBDeviceInfo
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        guard let deviceInfo = GBDeviceInfo.deviceInfo() else { return }
+
+        print("Major device ver: \(deviceInfo.deviceVersion.major)")
+        print("Major device ver: \(deviceInfo.deviceVersion.minor)")
+        print("systemInfo: \(deviceInfo.rawSystemInfoString ?? "")")
     }
 }

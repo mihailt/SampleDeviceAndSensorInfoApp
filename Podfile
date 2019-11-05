@@ -10,7 +10,8 @@ target 'SampleDeviceAndSensorInfoApp' do
   # Pods for SampleDeviceAndSensorInfoApp
   pod 'RxSwift', '~> 5'
   pod 'RxCocoa', '~> 5'
-  pod 'RxCoreMotion'
+  pod 'RxCoreMotion', '~> 1.2'
+  pod 'GBDeviceInfo', '~> 6.0'
 
   target 'SampleDeviceAndSensorInfoAppTests' do
     inherit! :search_paths

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SaN-Aa-gKu">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Magnetometer-->
+        <scene sceneID="FsW-61-YIU">
+            <objects>
+                <navigationController id="SaN-Aa-gKu" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Magnetometer" image="icons8-magnet" id="UDd-ZV-EzC"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="tS0-nN-CDJ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="9Mz-o4-ncj" kind="relationship" relationship="rootViewController" id="UJu-4v-2Gy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zas-v7-kWR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-754" y="155"/>
+        </scene>
+        <!--Magnetometer-->
+        <scene sceneID="RFf-Vt-2vH">
+            <objects>
+                <viewController storyboardIdentifier="MagnetometerViewController" id="9Mz-o4-ncj" customClass="MagnetometerViewController" customModule="SampleDeviceAndSensorInfoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tp2-2I-byr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="HfK-Pp-ewQ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Magnetometer" id="n8w-qq-RLB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NNw-r3-JHy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="175" y="156"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icons8-magnet" width="25" height="25"/>
+    </resources>
+</document>

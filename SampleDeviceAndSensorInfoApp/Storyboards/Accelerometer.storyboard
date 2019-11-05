@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0E5-ko-O2w">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Accelerometer-->
+        <scene sceneID="GBd-pe-R8P">
+            <objects>
+                <navigationController id="0E5-ko-O2w" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Accelerometer" image="icons8-speed" id="Bxu-Z7-HIi"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="gaL-eZ-n3V">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="94V-Rm-Glo" kind="relationship" relationship="rootViewController" id="RnE-Ml-J5g"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DXV-oo-d3y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-771" y="59"/>
+        </scene>
+        <!--Accelerometer-->
+        <scene sceneID="LxA-5N-Abk">
+            <objects>
+                <viewController storyboardIdentifier="AccelerometerViewController" id="94V-Rm-Glo" customClass="AccelerometerViewController" customModule="SampleDeviceAndSensorInfoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XKK-yJ-HOx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Ml9-67-eIS"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Accelerometer" id="5AP-Gf-sBl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9PB-V8-Zqt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="59"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icons8-speed" width="25" height="25"/>
+    </resources>
+</document>

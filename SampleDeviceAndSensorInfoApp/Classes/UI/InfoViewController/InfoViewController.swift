@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  InfoViewController.swift
 //  SampleDeviceAndSensorInfoApp
 //
 //  Created by Mihais Tumkins on 05/11/2019.
@@ -9,11 +9,10 @@
 import UIKit
 import GBDeviceInfo
 
-class ViewController: UIViewController {
+class InfoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         guard let deviceInfo = GBDeviceInfo.deviceInfo() else { return }
 
         print("Major device ver: \(deviceInfo.deviceVersion.major)")

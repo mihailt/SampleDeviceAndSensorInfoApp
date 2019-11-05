@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fca-b1-LdQ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Device Motion-->
+        <scene sceneID="rvs-RO-M5n">
+            <objects>
+                <navigationController id="fca-b1-LdQ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Device Motion" image="icons8-motion-sensor" id="ez6-f4-QMt"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Dpq-LE-wto">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Jcl-Gk-2mr" kind="relationship" relationship="rootViewController" id="bob-g5-1fS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dxA-Ca-CRY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-764" y="183"/>
+        </scene>
+        <!--Device Motion-->
+        <scene sceneID="cHZ-6F-8iG">
+            <objects>
+                <viewController storyboardIdentifier="DeviceMotionViewController" id="Jcl-Gk-2mr" customClass="DeviceMotionViewController" customModule="SampleDeviceAndSensorInfoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ogb-dg-SCM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="4Zl-s9-f35"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Device Motion" id="lSb-pM-rZ1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x1G-47-clS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="119" y="183"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icons8-motion-sensor" width="25" height="25"/>
+    </resources>
+</document>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rqF-23-IEp">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Gyroscope-->
+        <scene sceneID="MFC-K4-edc">
+            <objects>
+                <navigationController id="rqF-23-IEp" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Gyroscope" image="icons8-gyroscope" id="Kjm-Gh-z3C"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="hR8-67-s88">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="kDJ-99-eU1" kind="relationship" relationship="rootViewController" id="VnQ-xq-bKa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hXI-bw-BBG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-793" y="161"/>
+        </scene>
+        <!--Gyroscope-->
+        <scene sceneID="Pov-qq-Kij">
+            <objects>
+                <viewController storyboardIdentifier="GyroscopeViewController" id="kDJ-99-eU1" customClass="GyroscopeViewController" customModule="SampleDeviceAndSensorInfoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tv7-BP-f5f">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="rI7-Wr-GFL"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Gyroscope" id="HQ4-dE-ISJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r1v-fm-BJA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="158" y="161"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icons8-gyroscope" width="25" height="25"/>
+    </resources>
+</document>

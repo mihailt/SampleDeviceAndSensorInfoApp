@@ -9,11 +9,21 @@
 /* Begin PBXBuildFile section */
 		430BBA7123718B07009BA855 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430BBA7023718B07009BA855 /* AppDelegate.swift */; };
 		430BBA7323718B07009BA855 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430BBA7223718B07009BA855 /* SceneDelegate.swift */; };
-		430BBA7523718B07009BA855 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430BBA7423718B07009BA855 /* ViewController.swift */; };
 		430BBA7823718B07009BA855 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 430BBA7623718B07009BA855 /* Main.storyboard */; };
 		430BBA7A23718B0C009BA855 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 430BBA7923718B0C009BA855 /* Assets.xcassets */; };
 		430BBA7D23718B0C009BA855 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 430BBA7B23718B0C009BA855 /* LaunchScreen.storyboard */; };
 		430BBA8823718B0C009BA855 /* SampleDeviceAndSensorInfoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430BBA8723718B0C009BA855 /* SampleDeviceAndSensorInfoAppTests.swift */; };
+		430BBA9D2371A130009BA855 /* MagnetometerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430BBA9C2371A130009BA855 /* MagnetometerViewController.swift */; };
+		430BBA9F2371A13F009BA855 /* DeviceMotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430BBA9E2371A13F009BA855 /* DeviceMotionViewController.swift */; };
+		430BBAA12371A14A009BA855 /* AccelerometerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430BBAA02371A14A009BA855 /* AccelerometerViewController.swift */; };
+		430BBAA32371A15A009BA855 /* GyroscopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430BBAA22371A15A009BA855 /* GyroscopeViewController.swift */; };
+		430BBAA72371A2E2009BA855 /* MainTBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430BBAA62371A2E2009BA855 /* MainTBC.swift */; };
+		430BBAAC2371A41E009BA855 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430BBAAB2371A41E009BA855 /* InfoViewController.swift */; };
+		430BBAAE2371A49E009BA855 /* Info.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 430BBAAD2371A49E009BA855 /* Info.storyboard */; };
+		430BBAB02371A4B6009BA855 /* Magnetometer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 430BBAAF2371A4B6009BA855 /* Magnetometer.storyboard */; };
+		430BBAB22371A4C5009BA855 /* DeviceMotion.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 430BBAB12371A4C5009BA855 /* DeviceMotion.storyboard */; };
+		430BBAB42371A4D4009BA855 /* Accelerometer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 430BBAB32371A4D4009BA855 /* Accelerometer.storyboard */; };
+		430BBAB62371A4E5009BA855 /* Gyroscope.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 430BBAB52371A4E5009BA855 /* Gyroscope.storyboard */; };
 		BCE87F79AEC599541A12D6CB /* Pods_SampleDeviceAndSensorInfoAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0BD2BF03294CD01271F28F /* Pods_SampleDeviceAndSensorInfoAppTests.framework */; };
 		D68EE160338C958736D4BA22 /* Pods_SampleDeviceAndSensorInfoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2B29948590ECFA10AF123F /* Pods_SampleDeviceAndSensorInfoApp.framework */; };
 /* End PBXBuildFile section */
@@ -35,7 +45,6 @@
 		430BBA6D23718B07009BA855 /* SampleDeviceAndSensorInfoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleDeviceAndSensorInfoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		430BBA7023718B07009BA855 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		430BBA7223718B07009BA855 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		430BBA7423718B07009BA855 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		430BBA7723718B07009BA855 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		430BBA7923718B0C009BA855 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		430BBA7C23718B0C009BA855 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -43,6 +52,17 @@
 		430BBA8323718B0C009BA855 /* SampleDeviceAndSensorInfoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleDeviceAndSensorInfoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		430BBA8723718B0C009BA855 /* SampleDeviceAndSensorInfoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleDeviceAndSensorInfoAppTests.swift; sourceTree = "<group>"; };
 		430BBA8923718B0C009BA855 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		430BBA9C2371A130009BA855 /* MagnetometerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnetometerViewController.swift; sourceTree = "<group>"; };
+		430BBA9E2371A13F009BA855 /* DeviceMotionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceMotionViewController.swift; sourceTree = "<group>"; };
+		430BBAA02371A14A009BA855 /* AccelerometerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerometerViewController.swift; sourceTree = "<group>"; };
+		430BBAA22371A15A009BA855 /* GyroscopeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GyroscopeViewController.swift; sourceTree = "<group>"; };
+		430BBAA62371A2E2009BA855 /* MainTBC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTBC.swift; sourceTree = "<group>"; };
+		430BBAAB2371A41E009BA855 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		430BBAAD2371A49E009BA855 /* Info.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Info.storyboard; sourceTree = "<group>"; };
+		430BBAAF2371A4B6009BA855 /* Magnetometer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Magnetometer.storyboard; sourceTree = "<group>"; };
+		430BBAB12371A4C5009BA855 /* DeviceMotion.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DeviceMotion.storyboard; sourceTree = "<group>"; };
+		430BBAB32371A4D4009BA855 /* Accelerometer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Accelerometer.storyboard; sourceTree = "<group>"; };
+		430BBAB52371A4E5009BA855 /* Gyroscope.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Gyroscope.storyboard; sourceTree = "<group>"; };
 		7B2B29948590ECFA10AF123F /* Pods_SampleDeviceAndSensorInfoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleDeviceAndSensorInfoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D8F087D0983FAF7F90A0434 /* Pods-SampleDeviceAndSensorInfoAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleDeviceAndSensorInfoAppTests.release.xcconfig"; path = "Target Support Files/Pods-SampleDeviceAndSensorInfoAppTests/Pods-SampleDeviceAndSensorInfoAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		CCDEA0C98D664A248456EA69 /* Pods-SampleDeviceAndSensorInfoAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleDeviceAndSensorInfoAppTests.debug.xcconfig"; path = "Target Support Files/Pods-SampleDeviceAndSensorInfoAppTests/Pods-SampleDeviceAndSensorInfoAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -123,6 +143,11 @@
 			children = (
 				430BBA7623718B07009BA855 /* Main.storyboard */,
 				430BBA7B23718B0C009BA855 /* LaunchScreen.storyboard */,
+				430BBAAD2371A49E009BA855 /* Info.storyboard */,
+				430BBAAF2371A4B6009BA855 /* Magnetometer.storyboard */,
+				430BBAB12371A4C5009BA855 /* DeviceMotion.storyboard */,
+				430BBAB32371A4D4009BA855 /* Accelerometer.storyboard */,
+				430BBAB52371A4E5009BA855 /* Gyroscope.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -138,7 +163,12 @@
 		430BBA962371905B009BA855 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				430BBA7423718B07009BA855 /* ViewController.swift */,
+				430BBAA52371A2CB009BA855 /* MainTBC */,
+				430BBAA42371A24F009BA855 /* InfoViewController */,
+				430BBA9B2371A118009BA855 /* MagnetometerViewController */,
+				430BBA9A2371A10C009BA855 /* DeviceMotionViewController */,
+				430BBA992371A103009BA855 /* AccelerometerViewController */,
+				430BBA982371A0EC009BA855 /* GyroscopeViewController */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -149,6 +179,54 @@
 				430BBA7E23718B0C009BA855 /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		430BBA982371A0EC009BA855 /* GyroscopeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				430BBAA22371A15A009BA855 /* GyroscopeViewController.swift */,
+			);
+			path = GyroscopeViewController;
+			sourceTree = "<group>";
+		};
+		430BBA992371A103009BA855 /* AccelerometerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				430BBAA02371A14A009BA855 /* AccelerometerViewController.swift */,
+			);
+			path = AccelerometerViewController;
+			sourceTree = "<group>";
+		};
+		430BBA9A2371A10C009BA855 /* DeviceMotionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				430BBA9E2371A13F009BA855 /* DeviceMotionViewController.swift */,
+			);
+			path = DeviceMotionViewController;
+			sourceTree = "<group>";
+		};
+		430BBA9B2371A118009BA855 /* MagnetometerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				430BBA9C2371A130009BA855 /* MagnetometerViewController.swift */,
+			);
+			path = MagnetometerViewController;
+			sourceTree = "<group>";
+		};
+		430BBAA42371A24F009BA855 /* InfoViewController */ = {
+			isa = PBXGroup;
+			children = (
+				430BBAAB2371A41E009BA855 /* InfoViewController.swift */,
+			);
+			path = InfoViewController;
+			sourceTree = "<group>";
+		};
+		430BBAA52371A2CB009BA855 /* MainTBC */ = {
+			isa = PBXGroup;
+			children = (
+				430BBAA62371A2E2009BA855 /* MainTBC.swift */,
+			);
+			path = MainTBC;
 			sourceTree = "<group>";
 		};
 		7A706FBCDBF96E1C0FD8B778 /* Frameworks */ = {
@@ -257,7 +335,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				430BBA7D23718B0C009BA855 /* LaunchScreen.storyboard in Resources */,
+				430BBAB02371A4B6009BA855 /* Magnetometer.storyboard in Resources */,
+				430BBAB42371A4D4009BA855 /* Accelerometer.storyboard in Resources */,
 				430BBA7A23718B0C009BA855 /* Assets.xcassets in Resources */,
+				430BBAAE2371A49E009BA855 /* Info.storyboard in Resources */,
+				430BBAB22371A4C5009BA855 /* DeviceMotion.storyboard in Resources */,
+				430BBAB62371A4E5009BA855 /* Gyroscope.storyboard in Resources */,
 				430BBA7823718B07009BA855 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,8 +441,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				430BBA7523718B07009BA855 /* ViewController.swift in Sources */,
+				430BBA9D2371A130009BA855 /* MagnetometerViewController.swift in Sources */,
+				430BBAA32371A15A009BA855 /* GyroscopeViewController.swift in Sources */,
+				430BBAA12371A14A009BA855 /* AccelerometerViewController.swift in Sources */,
 				430BBA7123718B07009BA855 /* AppDelegate.swift in Sources */,
+				430BBAAC2371A41E009BA855 /* InfoViewController.swift in Sources */,
+				430BBA9F2371A13F009BA855 /* DeviceMotionViewController.swift in Sources */,
+				430BBAA72371A2E2009BA855 /* MainTBC.swift in Sources */,
 				430BBA7323718B07009BA855 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

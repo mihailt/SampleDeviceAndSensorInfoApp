@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="a3p-qN-4HB">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Info-->
+        <scene sceneID="cN6-fb-WyX">
+            <objects>
+                <navigationController id="a3p-qN-4HB" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Info" image="icons8-info" id="4Ho-ki-Pxt"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="hkV-B5-pZU">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="WCH-xs-7wN" kind="relationship" relationship="rootViewController" id="vHe-JP-8ec"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wvd-VX-sQz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-926" y="157"/>
+        </scene>
+        <!--Info-->
+        <scene sceneID="GH2-uj-3rC">
+            <objects>
+                <viewController storyboardIdentifier="InfoViewController" id="WCH-xs-7wN" customClass="InfoViewController" customModule="SampleDeviceAndSensorInfoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wb0-C9-Ms3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="qx3-Qo-ddM"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Info" id="6dl-HF-HyY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zfe-xW-uqI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-74" y="157"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icons8-info" width="25" height="25"/>
+    </resources>
+</document>

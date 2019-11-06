@@ -1,4 +1,4 @@
-# SampleDeviceandSensorInfoApp
+# SampleDeviceAndSensorInfoApp
 Sample iOS app which aggregates data from sensors, gets system info and displays it.
 supports both dark and light modes.
 

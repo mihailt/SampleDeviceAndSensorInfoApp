@@ -17,3 +17,13 @@ extension BatteryServiceInjectable {
         return DependencyAssembler.shared.resolver.resolve(PBatteryService.self)!
     }
 }
+
+protocol SensorServiceInjectable {
+    var sensorService: PSensorService { get }
+}
+
+extension SensorServiceInjectable {
+    var sensorService: PSensorService {
+        return DependencyAssembler.shared.resolver.resolve(PSensorService.self)!
+    }
+}

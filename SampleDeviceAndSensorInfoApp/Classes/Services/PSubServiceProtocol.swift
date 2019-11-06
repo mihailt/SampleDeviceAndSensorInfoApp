@@ -1,5 +1,5 @@
 //
-//  PSubscriber.swift
+//  PSubServiceProtocol.swift
 //  SampleDeviceAndSensorInfoApp
 //
 //  Created by Mihais Tumkins on 06/11/2019.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-public protocol PServiceProtocol {
+public protocol PSubServiceProtocol {
     func registerForEvents()
 }

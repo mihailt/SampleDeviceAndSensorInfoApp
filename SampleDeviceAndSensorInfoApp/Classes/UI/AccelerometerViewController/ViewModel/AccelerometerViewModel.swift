@@ -11,15 +11,13 @@ import RxCocoa
 import CoreMotion
 import RxCoreMotion
 
-class AccelerometerViewModel {
+class AccelerometerViewModel: SensorServiceInjectable {
 
     public let acceleration = BehaviorRelay<CMAcceleration?>(value: nil)
-
     private let bag = DisposeBag()
-    private let manager = CMMotionManager.rx.manager()
 
     func loadData() {
-        manager
+        sensorService.manager
             .flatMapLatest { manager in
                 manager.acceleration ?? Observable.empty()
             }

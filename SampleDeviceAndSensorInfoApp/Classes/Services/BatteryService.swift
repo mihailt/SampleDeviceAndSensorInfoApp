@@ -10,7 +10,7 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-protocol PBatteryService: PServiceProtocol {
+protocol PBatteryService: PSubServiceProtocol {
     var batteryState: BehaviorRelay<UIDevice.BatteryState> { get }
     var batteryLevel: BehaviorRelay<Float> { get }
 }

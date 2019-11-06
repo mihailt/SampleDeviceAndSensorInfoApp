@@ -11,15 +11,13 @@ import RxCocoa
 import CoreMotion
 import RxCoreMotion
 
-class GyroscopeViewModel {
+class GyroscopeViewModel: SensorServiceInjectable {
 
     public let rotationRate = BehaviorRelay<CMRotationRate?>(value: nil)
-
     private let bag = DisposeBag()
-    private let manager = CMMotionManager.rx.manager()
 
     func loadData() {
-        manager
+        sensorService.manager
             .flatMapLatest { manager in
                 manager.rotationRate ?? Observable.empty()
             }

@@ -11,15 +11,13 @@ import RxCocoa
 import CoreMotion
 import RxCoreMotion
 
-class MagnetometerViewModel {
+class MagnetometerViewModel: SensorServiceInjectable {
 
     public let magneticField = BehaviorRelay<CMMagneticField?>(value: nil)
-
     private let bag = DisposeBag()
-    private let manager = CMMotionManager.rx.manager()
 
     func loadData() {
-        manager
+        sensorService.manager
             .flatMapLatest { manager in
                 manager.magneticField ?? Observable.empty()
             }

@@ -32,8 +32,9 @@
 		430BBACA23729DA5009BA855 /* BatteryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430BBAC923729DA4009BA855 /* BatteryService.swift */; };
 		430BBACD23729E94009BA855 /* DependencyAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430BBACC23729E94009BA855 /* DependencyAssembler.swift */; };
 		430BBAD023729EB9009BA855 /* MainDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430BBACF23729EB9009BA855 /* MainDependencies.swift */; };
-		430BBAD323729EFA009BA855 /* PServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430BBAD223729EFA009BA855 /* PServiceProtocol.swift */; };
+		430BBAD323729EFA009BA855 /* PSubServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430BBAD223729EFA009BA855 /* PSubServiceProtocol.swift */; };
 		430BBAD623729FC5009BA855 /* Injectables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430BBAD523729FC5009BA855 /* Injectables.swift */; };
+		430BBAD82372A656009BA855 /* SensorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430BBAD72372A656009BA855 /* SensorService.swift */; };
 		BCE87F79AEC599541A12D6CB /* Pods_SampleDeviceAndSensorInfoAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0BD2BF03294CD01271F28F /* Pods_SampleDeviceAndSensorInfoAppTests.framework */; };
 		D68EE160338C958736D4BA22 /* Pods_SampleDeviceAndSensorInfoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2B29948590ECFA10AF123F /* Pods_SampleDeviceAndSensorInfoApp.framework */; };
 /* End PBXBuildFile section */
@@ -81,8 +82,9 @@
 		430BBAC923729DA4009BA855 /* BatteryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryService.swift; sourceTree = "<group>"; };
 		430BBACC23729E94009BA855 /* DependencyAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyAssembler.swift; sourceTree = "<group>"; };
 		430BBACF23729EB9009BA855 /* MainDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDependencies.swift; sourceTree = "<group>"; };
-		430BBAD223729EFA009BA855 /* PServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PServiceProtocol.swift; sourceTree = "<group>"; };
+		430BBAD223729EFA009BA855 /* PSubServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSubServiceProtocol.swift; sourceTree = "<group>"; };
 		430BBAD523729FC5009BA855 /* Injectables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injectables.swift; sourceTree = "<group>"; };
+		430BBAD72372A656009BA855 /* SensorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorService.swift; sourceTree = "<group>"; };
 		7B2B29948590ECFA10AF123F /* Pods_SampleDeviceAndSensorInfoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleDeviceAndSensorInfoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D8F087D0983FAF7F90A0434 /* Pods-SampleDeviceAndSensorInfoAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleDeviceAndSensorInfoAppTests.release.xcconfig"; path = "Target Support Files/Pods-SampleDeviceAndSensorInfoAppTests/Pods-SampleDeviceAndSensorInfoAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		CCDEA0C98D664A248456EA69 /* Pods-SampleDeviceAndSensorInfoAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleDeviceAndSensorInfoAppTests.debug.xcconfig"; path = "Target Support Files/Pods-SampleDeviceAndSensorInfoAppTests/Pods-SampleDeviceAndSensorInfoAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -299,8 +301,9 @@
 		430BBAC823729D96009BA855 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				430BBAD223729EFA009BA855 /* PServiceProtocol.swift */,
+				430BBAD223729EFA009BA855 /* PSubServiceProtocol.swift */,
 				430BBAC923729DA4009BA855 /* BatteryService.swift */,
+				430BBAD72372A656009BA855 /* SensorService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -552,6 +555,7 @@
 				430BBACA23729DA5009BA855 /* BatteryService.swift in Sources */,
 				430BBAA32371A15A009BA855 /* GyroscopeViewController.swift in Sources */,
 				430BBAA12371A14A009BA855 /* AccelerometerViewController.swift in Sources */,
+				430BBAD82372A656009BA855 /* SensorService.swift in Sources */,
 				430BBA7123718B07009BA855 /* AppDelegate.swift in Sources */,
 				430BBAAC2371A41E009BA855 /* InfoViewController.swift in Sources */,
 				430BBA9F2371A13F009BA855 /* DeviceMotionViewController.swift in Sources */,
@@ -560,7 +564,7 @@
 				430BBAD023729EB9009BA855 /* MainDependencies.swift in Sources */,
 				430BBA7323718B07009BA855 /* SceneDelegate.swift in Sources */,
 				430BBAB92371B6C8009BA855 /* GyroscopeViewModel.swift in Sources */,
-				430BBAD323729EFA009BA855 /* PServiceProtocol.swift in Sources */,
+				430BBAD323729EFA009BA855 /* PSubServiceProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

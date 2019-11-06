@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 private extension AppDelegate {
     func registerServices() {
         let resolver = DependencyAssembler.shared.resolver
-        let services: [PServiceProtocol?] = [
+        let services: [PSubServiceProtocol?] = [
             resolver.resolve(PBatteryService.self)
         ]
         services.forEach { service in

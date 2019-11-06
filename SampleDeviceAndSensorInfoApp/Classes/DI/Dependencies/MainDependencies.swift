@@ -14,5 +14,9 @@ class MainDependencies: Assembly {
         container.register(PBatteryService.self) { _ in
             BatteryService()
         }.inObjectScope(.container)
+
+        container.register(PSensorService.self) { _ in
+            SensorService()
+        }.inObjectScope(.container)
     }
 }

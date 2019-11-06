@@ -11,15 +11,13 @@ import RxCocoa
 import CoreMotion
 import RxCoreMotion
 
-class DeviceMotionViewModel {
+class DeviceMotionViewModel: SensorServiceInjectable {
 
     public let deviceMotion = BehaviorRelay<CMDeviceMotion?>(value: nil)
-
     private let bag = DisposeBag()
-    private let manager = CMMotionManager.rx.manager()
 
     func loadData() {
-        manager
+        sensorService.manager
             .flatMapLatest { manager in
                  manager.deviceMotion ?? Observable.empty()
             }

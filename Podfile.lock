@@ -10,12 +10,14 @@ PODS:
   - RxRelay (5.0.0):
     - RxSwift (~> 5)
   - RxSwift (5.0.0)
+  - Swinject (2.7.1)
 
 DEPENDENCIES:
   - GBDeviceInfo (~> 6.0)
   - RxCocoa (~> 5)
   - RxCoreMotion (~> 1.2)
   - RxSwift (~> 5)
+  - Swinject
 
 SPEC REPOS:
   trunk:
@@ -24,6 +26,7 @@ SPEC REPOS:
     - RxCoreMotion
     - RxRelay
     - RxSwift
+    - Swinject
 
 SPEC CHECKSUMS:
   GBDeviceInfo: a3f39dba1a04dcb630abff65d6f7e8fbf319eadd
@@ -31,7 +34,8 @@ SPEC CHECKSUMS:
   RxCoreMotion: d4edac149ab1e9c4d5bf0e22d786e8169e22a274
   RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
   RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
 
-PODFILE CHECKSUM: 596011ebf938157fb40f11b5c1952816e778db2b
+PODFILE CHECKSUM: 2e4c4c183609c9b406743e0cd1cf7d70b113961b
 
 COCOAPODS: 1.8.3

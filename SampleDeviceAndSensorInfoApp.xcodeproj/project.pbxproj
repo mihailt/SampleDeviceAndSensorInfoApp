@@ -29,6 +29,11 @@
 		430BBABF2371BC94009BA855 /* DeviceMotionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430BBABE2371BC94009BA855 /* DeviceMotionViewModel.swift */; };
 		430BBAC22371C6D0009BA855 /* AccelerometerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430BBAC12371C6D0009BA855 /* AccelerometerViewModel.swift */; };
 		430BBAC72371CC7E009BA855 /* InfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430BBAC62371CC7E009BA855 /* InfoViewModel.swift */; };
+		430BBACA23729DA5009BA855 /* BatteryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430BBAC923729DA4009BA855 /* BatteryService.swift */; };
+		430BBACD23729E94009BA855 /* DependencyAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430BBACC23729E94009BA855 /* DependencyAssembler.swift */; };
+		430BBAD023729EB9009BA855 /* MainDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430BBACF23729EB9009BA855 /* MainDependencies.swift */; };
+		430BBAD323729EFA009BA855 /* PServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430BBAD223729EFA009BA855 /* PServiceProtocol.swift */; };
+		430BBAD623729FC5009BA855 /* Injectables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430BBAD523729FC5009BA855 /* Injectables.swift */; };
 		BCE87F79AEC599541A12D6CB /* Pods_SampleDeviceAndSensorInfoAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0BD2BF03294CD01271F28F /* Pods_SampleDeviceAndSensorInfoAppTests.framework */; };
 		D68EE160338C958736D4BA22 /* Pods_SampleDeviceAndSensorInfoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2B29948590ECFA10AF123F /* Pods_SampleDeviceAndSensorInfoApp.framework */; };
 /* End PBXBuildFile section */
@@ -73,6 +78,11 @@
 		430BBABE2371BC94009BA855 /* DeviceMotionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceMotionViewModel.swift; sourceTree = "<group>"; };
 		430BBAC12371C6D0009BA855 /* AccelerometerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerometerViewModel.swift; sourceTree = "<group>"; };
 		430BBAC62371CC7E009BA855 /* InfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewModel.swift; sourceTree = "<group>"; };
+		430BBAC923729DA4009BA855 /* BatteryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryService.swift; sourceTree = "<group>"; };
+		430BBACC23729E94009BA855 /* DependencyAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyAssembler.swift; sourceTree = "<group>"; };
+		430BBACF23729EB9009BA855 /* MainDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDependencies.swift; sourceTree = "<group>"; };
+		430BBAD223729EFA009BA855 /* PServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PServiceProtocol.swift; sourceTree = "<group>"; };
+		430BBAD523729FC5009BA855 /* Injectables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injectables.swift; sourceTree = "<group>"; };
 		7B2B29948590ECFA10AF123F /* Pods_SampleDeviceAndSensorInfoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleDeviceAndSensorInfoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D8F087D0983FAF7F90A0434 /* Pods-SampleDeviceAndSensorInfoAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleDeviceAndSensorInfoAppTests.release.xcconfig"; path = "Target Support Files/Pods-SampleDeviceAndSensorInfoAppTests/Pods-SampleDeviceAndSensorInfoAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		CCDEA0C98D664A248456EA69 /* Pods-SampleDeviceAndSensorInfoAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleDeviceAndSensorInfoAppTests.debug.xcconfig"; path = "Target Support Files/Pods-SampleDeviceAndSensorInfoAppTests/Pods-SampleDeviceAndSensorInfoAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -141,8 +151,10 @@
 		430BBA932371902A009BA855 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				430BBACB23729E89009BA855 /* DI */,
 				430BBA7023718B07009BA855 /* AppDelegate.swift */,
 				430BBA7223718B07009BA855 /* SceneDelegate.swift */,
+				430BBAC823729D96009BA855 /* Services */,
 				430BBA962371905B009BA855 /* UI */,
 			);
 			path = Classes;
@@ -282,6 +294,41 @@
 				430BBAC62371CC7E009BA855 /* InfoViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		430BBAC823729D96009BA855 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				430BBAD223729EFA009BA855 /* PServiceProtocol.swift */,
+				430BBAC923729DA4009BA855 /* BatteryService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		430BBACB23729E89009BA855 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				430BBAD423729FB2009BA855 /* Injectables */,
+				430BBACC23729E94009BA855 /* DependencyAssembler.swift */,
+				430BBACE23729EAF009BA855 /* Dependencies */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		430BBACE23729EAF009BA855 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				430BBACF23729EB9009BA855 /* MainDependencies.swift */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		430BBAD423729FB2009BA855 /* Injectables */ = {
+			isa = PBXGroup;
+			children = (
+				430BBAD523729FC5009BA855 /* Injectables.swift */,
+			);
+			path = Injectables;
 			sourceTree = "<group>";
 		};
 		7A706FBCDBF96E1C0FD8B778 /* Frameworks */ = {
@@ -499,16 +546,21 @@
 				430BBAC72371CC7E009BA855 /* InfoViewModel.swift in Sources */,
 				430BBABC2371BA09009BA855 /* MagnetometerViewModel.swift in Sources */,
 				430BBA9D2371A130009BA855 /* MagnetometerViewController.swift in Sources */,
+				430BBACD23729E94009BA855 /* DependencyAssembler.swift in Sources */,
 				430BBAC22371C6D0009BA855 /* AccelerometerViewModel.swift in Sources */,
 				430BBABF2371BC94009BA855 /* DeviceMotionViewModel.swift in Sources */,
+				430BBACA23729DA5009BA855 /* BatteryService.swift in Sources */,
 				430BBAA32371A15A009BA855 /* GyroscopeViewController.swift in Sources */,
 				430BBAA12371A14A009BA855 /* AccelerometerViewController.swift in Sources */,
 				430BBA7123718B07009BA855 /* AppDelegate.swift in Sources */,
 				430BBAAC2371A41E009BA855 /* InfoViewController.swift in Sources */,
 				430BBA9F2371A13F009BA855 /* DeviceMotionViewController.swift in Sources */,
+				430BBAD623729FC5009BA855 /* Injectables.swift in Sources */,
 				430BBAA72371A2E2009BA855 /* MainTBC.swift in Sources */,
+				430BBAD023729EB9009BA855 /* MainDependencies.swift in Sources */,
 				430BBA7323718B07009BA855 /* SceneDelegate.swift in Sources */,
 				430BBAB92371B6C8009BA855 /* GyroscopeViewModel.swift in Sources */,
+				430BBAD323729EFA009BA855 /* PServiceProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

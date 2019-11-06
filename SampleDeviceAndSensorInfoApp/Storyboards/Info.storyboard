@@ -63,6 +63,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Battery State:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Id8-in-Uej">
+                                <rect key="frame" x="20" y="369" width="105" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Battery Level:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHj-ZT-P4N">
+                                <rect key="frame" x="20" y="398" width="104.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -71,17 +83,23 @@
                             <constraint firstItem="g1D-Xp-Dme" firstAttribute="leading" secondItem="1O6-qm-Kbz" secondAttribute="leading" id="6S7-0O-wSz"/>
                             <constraint firstItem="7ZS-w1-bYM" firstAttribute="top" secondItem="veU-Xv-JgA" secondAttribute="bottom" constant="8" id="OGh-kC-FP6"/>
                             <constraint firstItem="veU-Xv-JgA" firstAttribute="leading" secondItem="Utj-MX-GQa" secondAttribute="leading" id="OfX-e3-jCd"/>
+                            <constraint firstItem="oHj-ZT-P4N" firstAttribute="top" secondItem="Id8-in-Uej" secondAttribute="bottom" constant="8" id="RoZ-Vn-Gyh"/>
                             <constraint firstItem="1O6-qm-Kbz" firstAttribute="top" secondItem="7ZS-w1-bYM" secondAttribute="bottom" constant="8" id="U6b-wA-sB7"/>
                             <constraint firstItem="1O6-qm-Kbz" firstAttribute="leading" secondItem="7ZS-w1-bYM" secondAttribute="leading" id="VmW-ec-4Us"/>
+                            <constraint firstItem="Id8-in-Uej" firstAttribute="leading" secondItem="g1D-Xp-Dme" secondAttribute="leading" id="gVN-DX-40Y"/>
                             <constraint firstItem="Utj-MX-GQa" firstAttribute="top" secondItem="qx3-Qo-ddM" secondAttribute="top" constant="20" id="mrj-Oc-wx6"/>
+                            <constraint firstItem="oHj-ZT-P4N" firstAttribute="leading" secondItem="Id8-in-Uej" secondAttribute="leading" id="v9i-lj-3No"/>
                             <constraint firstItem="qx3-Qo-ddM" firstAttribute="trailing" secondItem="Utj-MX-GQa" secondAttribute="trailing" constant="20" id="vFT-ly-m5u"/>
                             <constraint firstItem="veU-Xv-JgA" firstAttribute="top" secondItem="Utj-MX-GQa" secondAttribute="bottom" constant="40" id="vUh-Tz-fQ9"/>
+                            <constraint firstItem="Id8-in-Uej" firstAttribute="top" secondItem="g1D-Xp-Dme" secondAttribute="bottom" constant="20" id="vev-Y6-pBs"/>
                             <constraint firstItem="7ZS-w1-bYM" firstAttribute="leading" secondItem="veU-Xv-JgA" secondAttribute="leading" id="yvq-DB-z3u"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qx3-Qo-ddM"/>
                     </view>
                     <navigationItem key="navigationItem" title="Info" id="6dl-HF-HyY"/>
                     <connections>
+                        <outlet property="batteryLevelLabel" destination="oHj-ZT-P4N" id="zNa-WZ-zdw"/>
+                        <outlet property="batteryStateLabel" destination="Id8-in-Uej" id="rNE-ne-HEL"/>
                         <outlet property="majorOsVersionLabel" destination="7ZS-w1-bYM" id="x3c-yO-fth"/>
                         <outlet property="minorOsVersionLabel" destination="1O6-qm-Kbz" id="KHy-ZL-YMR"/>
                         <outlet property="modelLabel" destination="veU-Xv-JgA" id="PRt-8J-soF"/>

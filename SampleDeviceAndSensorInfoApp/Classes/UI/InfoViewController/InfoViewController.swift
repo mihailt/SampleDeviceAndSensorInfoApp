@@ -19,6 +19,9 @@ class InfoViewController: UIViewController {
     @IBOutlet weak var minorOsVersionLabel: UILabel!
     @IBOutlet weak var screenResolutionLabel: UILabel!
 
+    @IBOutlet weak var batteryStateLabel: UILabel!
+    @IBOutlet weak var batteryLevelLabel: UILabel!
+
     let viewModel = InfoViewModel()
 
     override func viewDidLoad() {
@@ -47,6 +50,16 @@ class InfoViewController: UIViewController {
         viewModel.screenResolution
             .asObservable()
             .bind(to: screenResolutionLabel.rx.text)
+            .disposed(by: bag)
+
+        viewModel.batteryState
+            .asObservable()
+            .bind(to: batteryStateLabel.rx.text)
+            .disposed(by: bag)
+
+        viewModel.batteryLevel
+            .asObservable()
+            .bind(to: batteryLevelLabel.rx.text)
             .disposed(by: bag)
     }
 }
